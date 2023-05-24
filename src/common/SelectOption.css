@@ -1,0 +1,8 @@
+.selectWrapper select{
+    border-radius: 3px;
+    padding: 1px 31px;
+    letter-spacing: 1px;
+    color: #757575;
+    text-transform: capitalize;
+    
+}

@@ -1,0 +1,34 @@
+.form-group {
+    display: block;
+    margin-top: 30px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #757575;
+}
+
+.form-group  .ck-content {
+    border-color: #e7e7e7  !important;
+    height: 130px;
+    box-shadow: 0 0 0 !important;
+}
+
+.form-group  .ck.ck-toolbar{
+    border-color: #e7e7e7 !important;
+}
+
+.custom-block .btn{
+    margin-top: 17px !important; 
+    padding: 10px 30px;
+    min-width: 100px;
+    letter-spacing: 1px;
+}
+
+.database_image img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}

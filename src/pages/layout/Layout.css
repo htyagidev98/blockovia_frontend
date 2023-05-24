@@ -1,0 +1,15 @@
+main.main {
+    width: calc(100% - 250px);
+    margin-left: auto;
+    padding: 24px;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+.innermain {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    min-height: calc(100vh - 60px);
+    box-shadow: 0 0 15px rgb(0,0,0,.05);
+}

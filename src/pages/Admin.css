@@ -1,0 +1,30 @@
+.custom-block h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #111b24;
+    margin: 0 0 20px 0;
+    padding-left: 10px;
+    border-left: 3px solid #00eac7;
+}
+.dashboard_content {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    background: #0f3034;
+    color: #fff;
+}
+
+.dashboard_content .btn{
+    color: #00ccab;
+    background-color: rgba(255,255,255,.1);
+    border:0;
+    font-size: 13px;
+    padding: 10px 20px;
+    transition: all .30s ease-in-out;
+    letter-spacing: 1px;
+}
+.dashboard_content .btn:hover{
+    color: #0f3034;
+    background-color: #fff !important;
+}
+
