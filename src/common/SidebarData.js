@@ -118,10 +118,7 @@ const SidebarData = {
       subMenuName: "Animate Card",
     },
 
-    {
-      subMenuName: "Footer Section",
-    },
-   
+ 
   ],
 
   subMenuData1: [
