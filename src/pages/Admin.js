@@ -8,8 +8,8 @@ const Admin = (props) => {
   const [showSelect, setShowSelect] = useState(false);
   const [filterData, setFilterData] = useState({})
   const [objectData, setObjectData] = useState({})
-
-
+  const[featuredData, setFeaturedData]= useState([]);
+ console.log('featured', featuredData)
   // Get url for array of doccument
 
   let url =
@@ -34,6 +34,9 @@ const Admin = (props) => {
     try {
       const res = await axios.get(url);
       if (res.status === 200) {
+        if(props.heading==="Featured"){
+          setData(featuredData)
+        }
         setData(res.data.responseData);
         setShowSelect(true);
       }
@@ -63,12 +66,16 @@ const Admin = (props) => {
 
   // Get url for single object   
 
-  let getUrl = (props.heading === 'Hero Section' && '/hero/content/get' || props.heading === "Building and Blockchain" && '/blockchain/get' || props.heading === "Application" && '/application/get' || props.heading === "Network and upgrade" && '/network/get' || props.heading === "Driving Text" && '/drivingtext/get' || props.heading === "Footprint" && '/footprint/get' || props.heading === "Community" && '/community/get')
+  let getUrl = (props.heading === 'Hero Section' && '/hero/content/get' || props.heading === "Building and Blockchain" && '/blockchain/get' || props.heading === "Application" && '/application/get' || props.heading === "Network and upgrade" && '/network/get' || props.heading === "Driving Text" && '/drivingtext/get' || props.heading === "Footprint" && '/footprint/get' || props.heading === "Community" && '/community/get' || props.heading === "Community" && '/community/get' || props.heading === "Featured" && '/feature/content/get' )
 
   const RederedForm = async () => {
     try {
       const response = await axios.get(getUrl)
-      setObjectData(response.data.responseData)
+      if(props.heading === "Featured"){
+        // console.log('res from fitured', response.data.responseData.ImagesData)
+        setFeaturedData(response.data.responseData.ImagesData);   
+      }
+      setObjectData(response.data.responseData);
     } catch (error) {
       console.log(error)
     }

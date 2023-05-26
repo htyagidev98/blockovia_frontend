@@ -2,6 +2,7 @@ import React  from 'react';
 import './SelectOption.css';
 
 const SelectOption = (props) => {
+  console.log('props', props)
   
 
   return (
